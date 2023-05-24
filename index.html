@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Carly Simone Brewster !</title>
+    <title>Carly Simone Brewster</title>
     <meta name="title" content="Carly Simone Brewster" />
     <meta name="description" content="Vote for the song you like the most" />
 
@@ -83,11 +83,12 @@
       }
 
       .cy-noise {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
+        position: fixed;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
         pointer-events: none;
+        z-index: -1;
       }
 
       .cy-noise::before {
