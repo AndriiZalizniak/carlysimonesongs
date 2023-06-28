@@ -1,566 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Carly Simone Brewster</title>
-    <meta name="title" content="Carly Simone Brewster" />
-    <meta name="description" content="Vote for the song you like the most" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
-      rel="stylesheet"
-    />
+  <title>Carly Simone Brewster</title>
+  <meta name="title" content="Carly Simone Brewster" />
+  <meta name="description" content="Vote for the song you like the most" />
 
-    <meta property="og:url" content="#" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Carly Simone Brewster" />
-    <meta
-      property="og:description"
-      content="Vote for the song you like the most"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet" />
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="#" />
-    <meta property="twitter:title" content="Carly Simone Brewster" />
-    <meta
-      property="twitter:description"
-      content="Vote for the song you like the most"
-    />
+  <meta property="og:url" content="#" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Carly Simone Brewster" />
+  <meta property="og:description" content="Vote for the song you like the most" />
 
-    <meta name="theme-color" content="#6B47D2" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="#" />
+  <meta property="twitter:title" content="Carly Simone Brewster" />
+  <meta property="twitter:description" content="Vote for the song you like the most" />
 
-    <link
-      href="https://uploads-ssl.webflow.com/63f63be41dae00a45250a2e0/63fcb332d1b4f2f4fd52ed3b_favicon%2032.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-    <link
-      href="https://uploads-ssl.webflow.com/63f63be41dae00a45250a2e0/63fcb33a14839018b141118d_favicon%20512.png"
-      rel="apple-touch-icon"
-    />
+  <meta name="theme-color" content="#6B47D2" />
 
-    <style>
-      p,
-      h1,
+  <link href="https://uploads-ssl.webflow.com/63f63be41dae00a45250a2e0/63fcb332d1b4f2f4fd52ed3b_favicon%2032.png"
+    rel="shortcut icon" type="image/x-icon" />
+  <link href="https://uploads-ssl.webflow.com/63f63be41dae00a45250a2e0/63fcb33a14839018b141118d_favicon%20512.png"
+    rel="apple-touch-icon" />
+
+  <style>
+    p,
+    h1,
+    body {
+      margin: 0;
+    }
+
+    [disabled] {
+      pointer-events: none;
+    }
+
+    body {
+      background-color: #151517;
+      font-family: "Dela Gothic One", cursive;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 111.8%;
+      text-transform: uppercase;
+    }
+
+    body a {
+      color: currentColor;
+      text-decoration: none;
+      transition: opacity 0.2s linear;
+    }
+
+    body a:hover {
+      opacity: 0.8;
+    }
+
+    .cy-noise {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .cy-noise::before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      inset: 0;
+      background-image: url("https://wp.screver.com/wp-content/uploads/2023/05/bg-noise-2.png");
+      background-position: center;
+      z-index: -1;
+      -webkit-animation: noiseBg 0.1s linear infinite;
+      animation: noiseBg 0.1s linear infinite;
+      will-change: transform;
+    }
+
+    header {
+      background-color: #6b47d2;
+    }
+
+    header>div {
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1339px;
+      height: 116px;
+    }
+
+    .cy-logo {
+      color: #151517;
+    }
+
+    .cy-about {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 24px;
+      color: #ffffff;
+    }
+
+    .cy-about>span {
+      display: block;
+      width: 31px;
+      height: 2px;
+      background-color: #fff;
+    }
+
+    .cy-tel {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
+      color: #f98084;
+      text-decoration: none;
+    }
+
+    .cy-tel>svg {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .cy-tel:hover svg {
+      transform: scale(1.15);
+    }
+
+    main {
+      margin: 0 auto;
+      padding: 105px 20px 80px;
+      max-width: 973px;
+      color: #ffffff;
+    }
+
+    h1 {
+      margin: 0;
+      padding-bottom: 64px;
+      max-width: 825px;
+      font-size: 48px;
+      letter-spacing: -0.008em;
+      line-height: 1;
+    }
+
+    .cy-song-item {
+      padding: 32px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #b9b9b9;
+    }
+
+    .cy-song-item:last-child {
+      border-bottom: 1px solid #b9b9b9;
+    }
+
+    .cy-vote-value {
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 6px;
+      color: #b9b9b9;
+    }
+
+    .cy-song-item__inner {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cy-stars-list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cy-vote-button {
+      padding: 0;
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 0;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .cy-vote-button:has(.is_active) {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .cy-vote-button svg {
+      transition: all 0.15s ease-in-out;
+    }
+
+    .cy-vote-button:hover svg {
+      transform: translateY(-2px);
+    }
+
+    .cy-vote-button>.is_active>svg {
+      fill: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
       body {
-        margin: 0;
+        font-size: 14px;
       }
 
-      [disabled] {
-        pointer-events: none;
-      }
-
-      body {
-        background-color: #151517;
-        font-family: "Dela Gothic One", cursive;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 111.8%;
-        text-transform: uppercase;
-      }
-
-      body a {
-        color: currentColor;
-        text-decoration: none;
-        transition: opacity 0.2s linear;
-      }
-
-      body a:hover {
-        opacity: 0.8;
-      }
-
-      .cy-noise {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        pointer-events: none;
-        z-index: -1;
-      }
-
-      .cy-noise::before {
-        content: "";
-        position: absolute;
-        width: 200%;
-        height: 200%;
-        inset: 0;
-        background-image: url("https://wp.screver.com/wp-content/uploads/2023/05/bg-noise-2.png");
-        background-position: center;
-        z-index: -1;
-        -webkit-animation: noiseBg 0.1s linear infinite;
-        animation: noiseBg 0.1s linear infinite;
-        will-change: transform;
-      }
-
-      header {
-        background-color: #6b47d2;
-      }
-
-      header > div {
-        margin: 0 auto;
-        padding: 0 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1339px;
-        height: 116px;
+      header>div {
+        display: block;
+        padding: 14px 12px 28px;
+        height: auto;
       }
 
       .cy-logo {
-        color: #151517;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+      .cy-logo br {
+        display: none;
       }
 
       .cy-about {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 24px;
-        color: #ffffff;
+        gap: 10px;
       }
 
-      .cy-about > span {
-        display: block;
-        width: 31px;
-        height: 2px;
-        background-color: #fff;
+      .cy-about>span {
+        width: 24px;
       }
 
       .cy-tel {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 8px;
-        color: #f98084;
-        text-decoration: none;
-      }
-
-      .cy-tel > svg {
-        transition: transform 0.2s ease-in-out;
-      }
-
-      .cy-tel:hover svg {
-        transform: scale(1.15);
+        flex: none;
+        font-size: 12px;
       }
 
       main {
-        margin: 0 auto;
-        padding: 105px 20px 80px;
-        max-width: 973px;
-        color: #ffffff;
+        padding-top: 64px;
       }
 
       h1 {
-        margin: 0;
-        padding-bottom: 64px;
-        max-width: 825px;
-        font-size: 48px;
-        letter-spacing: -0.008em;
-        line-height: 1;
+        font-size: 30px;
       }
 
       .cy-song-item {
-        padding: 32px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top: 1px solid #b9b9b9;
-      }
-
-      .cy-song-item:last-child {
-        border-bottom: 1px solid #b9b9b9;
-      }
-
-      .cy-vote-value {
-        display: inline-flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 6px;
-        color: #b9b9b9;
-      }
-
-      .cy-song-item__inner {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 20px;
+        display: block;
+        padding: 24px 0;
       }
 
       .cy-stars-list {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 6px;
+        margin-top: 18px;
       }
 
-      .cy-vote-button {
-        padding: 0;
-        display: block;
-        width: 24px;
-        height: 24px;
-        border: 0;
-        outline: none;
-        background-color: transparent;
-        cursor: pointer;
+      .cy-song-item__inner {
+        gap: 10px;
       }
 
-      .cy-vote-button:has(.is_active) {
-        pointer-events: none;
-        opacity: 0.5;
+      .cy-song-item__inner {
+        justify-content: space-between;
+      }
+    }
+
+    @-webkit-keyframes noiseBg {
+      0% {
+        transform: translate(0, 0);
       }
 
-      .cy-vote-button svg {
-        transition: all 0.15s ease-in-out;
+      25% {
+        transform: translate(-40px, 0);
       }
 
-      .cy-vote-button:hover svg {
-        transform: translateY(-2px);
+      50% {
+        transform: translate(-40px, -40px);
       }
 
-      .cy-vote-button > .is_active > svg {
-        fill: #fff;
+      75% {
+        transform: translate(0, -40);
       }
 
-      @media screen and (max-width: 768px) {
-        body {
-          font-size: 14px;
-        }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
 
-        header > div {
-          display: block;
-          padding: 14px 12px 28px;
-          height: auto;
-        }
-
-        .cy-logo {
-          margin-bottom: 24px;
-          text-align: center;
-        }
-
-        .cy-logo br {
-          display: none;
-        }
-
-        .cy-about {
-          gap: 10px;
-        }
-
-        .cy-about > span {
-          width: 24px;
-        }
-
-        .cy-tel {
-          flex: none;
-          font-size: 12px;
-        }
-
-        main {
-          padding-top: 64px;
-        }
-
-        h1 {
-          font-size: 30px;
-        }
-
-        .cy-song-item {
-          display: block;
-          padding: 24px 0;
-        }
-
-        .cy-stars-list {
-          margin-top: 18px;
-        }
-
-        .cy-song-item__inner {
-          gap: 10px;
-        }
-
-        .cy-song-item__inner {
-          justify-content: space-between;
-        }
+    @keyframes noiseBg {
+      0% {
+        transform: translate(0, 0);
       }
 
-      @-webkit-keyframes noiseBg {
-        0% {
-          transform: translate(0, 0);
-        }
-
-        25% {
-          transform: translate(-40px, 0);
-        }
-
-        50% {
-          transform: translate(-40px, -40px);
-        }
-
-        75% {
-          transform: translate(0, -40);
-        }
-
-        100% {
-          transform: translate(0, 0);
-        }
+      25% {
+        transform: translate(-40px, 0);
       }
 
-      @keyframes noiseBg {
-        0% {
-          transform: translate(0, 0);
-        }
-
-        25% {
-          transform: translate(-40px, 0);
-        }
-
-        50% {
-          transform: translate(-40px, -40px);
-        }
-
-        75% {
-          transform: translate(0, -40px);
-        }
-
-        100% {
-          transform: translate(0, 0);
-        }
+      50% {
+        transform: translate(-40px, -40px);
       }
-    </style>
 
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-  </head>
+      75% {
+        transform: translate(0, -40px);
+      }
 
-  <body>
-    <div class="cy-noise"></div>
-    <header>
-      <div class="">
-        <p class="cy-logo">
-          Carly Simone <br />
-          Brewster
-        </p>
-        <p class="cy-about">
-          let's get in touch <span></span>
-          <a class="cy-tel" href="tel:+41 43 654 22 56">
-            +41 43 654 22 56
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="#F98084"
-                d="M3.837 16.669 2.486 21.6l5.046-1.325-3.695-3.606Z"
-              />
-              <path
-                fill="#F98084"
-                d="M12 2.4c-5.302 0-9.6 4.298-9.6 9.6s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6-4.298-9.6-9.6-9.6Zm4.74 12.914c-.198.555-1.17 1.09-1.605 1.128-.439.041-.849.198-2.854-.592-2.42-.952-3.945-3.43-4.064-3.59-.12-.157-.968-1.289-.968-2.457 0-1.172.614-1.745.83-1.984a.875.875 0 0 1 .635-.297c.156 0 .316 0 .455.007.171.004.357.015.536.41.212.468.673 1.644.733 1.763.059.12.1.261.018.417-.078.16-.12.257-.234.399-.12.137-.25.308-.358.412-.12.12-.242.25-.104.488.138.237.614 1.016 1.32 1.644.909.812 1.675 1.061 1.914 1.18.238.12.376.101.513-.059.142-.156.595-.692.755-.93.156-.239.316-.198.532-.12.22.079 1.388.656 1.627.775.238.12.394.178.454.275.062.1.062.576-.136 1.131Z"
-              />
-            </svg>
-          </a>
-        </p>
-      </div>
-    </header>
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  </style>
 
-    <main x-data="voting">
-      <h1>vote for the song you like the most</h1>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
 
-      <template x-if="isLoaded">
-        <div>
-          <template x-for="item in compositions">
-            <div class="cy-song-item">
-              <div class="cy-song-item__inner">
-                <a
-                  x-bind:href="item.song_link"
-                  x-html="item.song_title"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                ></a>
+<body>
+  <div class="cy-noise"></div>
+  <header>
+    <div class="">
+      <p class="cy-logo">
+        Carly Simone <br />
+        Brewster
+      </p>
+      <p class="cy-about">
+        let's get in touch <span></span>
+        <a class="cy-tel" href="tel:+41 43 654 22 56">
+          +41 43 654 22 56
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path fill="#F98084" d="M3.837 16.669 2.486 21.6l5.046-1.325-3.695-3.606Z" />
+            <path fill="#F98084"
+              d="M12 2.4c-5.302 0-9.6 4.298-9.6 9.6s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6-4.298-9.6-9.6-9.6Zm4.74 12.914c-.198.555-1.17 1.09-1.605 1.128-.439.041-.849.198-2.854-.592-2.42-.952-3.945-3.43-4.064-3.59-.12-.157-.968-1.289-.968-2.457 0-1.172.614-1.745.83-1.984a.875.875 0 0 1 .635-.297c.156 0 .316 0 .455.007.171.004.357.015.536.41.212.468.673 1.644.733 1.763.059.12.1.261.018.417-.078.16-.12.257-.234.399-.12.137-.25.308-.358.412-.12.12-.242.25-.104.488.138.237.614 1.016 1.32 1.644.909.812 1.675 1.061 1.914 1.18.238.12.376.101.513-.059.142-.156.595-.692.755-.93.156-.239.316-.198.532-.12.22.079 1.388.656 1.627.775.238.12.394.178.454.275.062.1.062.576-.136 1.131Z" />
+          </svg>
+        </a>
+      </p>
+    </div>
+  </header>
 
-                <div class="cy-vote-value">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    fill="none"
-                    viewBox="0 0 18 18"
-                  >
-                    <g clip-path="url(#a_vote-star)">
-                      <path
-                        fill="#B9B9B9"
-                        stroke="#B9B9B9"
-                        stroke-linecap="round"
-                        stroke-width="2"
-                        d="m9 1.5 2.318 4.695 5.182.757-3.75 3.653.885 5.16L9 13.327l-4.635 2.438.885-5.16L1.5 6.952l5.183-.757L9 1.5Z"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="a_vote-star">
-                        <path fill="#fff" d="M0 0h18v18H0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+  <main x-data="voting">
+    <h1>vote for the song you like the most</h1>
 
-                  <span x-html="item.current_rating"></span>
-                </div>
-              </div>
+    <template x-if="isLoaded">
+      <div>
+        <template x-for="item in compositions">
+          <div class="cy-song-item">
+            <div class="cy-song-item__inner">
+              <a x-bind:href="item.song_link" x-html="item.song_title" target="_blank" rel="noopener noreferrer"></a>
 
-              <div class="cy-stars-list">
-                <template x-for="vote in points">
-                  <button
-                    type="button"
-                    @click="sendVote(item, vote)"
-                    x-bind:disabled="getVote(item)"
-                    class="cy-vote-button"
-                  >
-                    <span
-                      x-bind:class="(getVote(item) && getVote(item) >= vote) ? 'is_active' : ''"
-                    >
-                      <!-- <span x-html="vote"></span> -->
+              <div class="cy-vote-value">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
+                  <g clip-path="url(#a_vote-star)">
+                    <path fill="#B9B9B9" stroke="#B9B9B9" stroke-linecap="round" stroke-width="2"
+                      d="m9 1.5 2.318 4.695 5.182.757-3.75 3.653.885 5.16L9 13.327l-4.635 2.438.885-5.16L1.5 6.952l5.183-.757L9 1.5Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a_vote-star">
+                      <path fill="#fff" d="M0 0h18v18H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
 
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <g clip-path="url(#a_star-cut)">
-                          <path
-                            stroke="#fff"
-                            stroke-linecap="round"
-                            stroke-width="2"
-                            d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="a_star-cut">
-                            <path fill="#fff" d="M0 0h24v24H0z" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                  </button>
-                </template>
+                <span x-html="item.current_rating"></span>
               </div>
             </div>
-          </template>
-        </div>
-      </template>
 
-      <template x-if="!isLoaded">
-        <div>Loading...</div>
-      </template>
-    </main>
+            <div class="cy-stars-list">
+              <template x-for="vote in points">
+                <button type="button" @click="sendVote(item, vote)" x-bind:disabled="getVote(item)"
+                  class="cy-vote-button">
+                  <span x-bind:class="(getVote(item) && getVote(item) >= vote) ? 'is_active' : ''">
+                    <!-- <span x-html="vote"></span> -->
 
-    <script>
-      const sheetId = "f2eab83d-99e5-49e8-ae75-2baeb82d9ee3";
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <g clip-path="url(#a_star-cut)">
+                        <path stroke="#fff" stroke-linecap="round" stroke-width="2"
+                          d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="a_star-cut">
+                          <path fill="#fff" d="M0 0h24v24H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+              </template>
+            </div>
+          </div>
+        </template>
+      </div>
+    </template>
 
-      document.addEventListener("alpine:init", () => {
-        window.Alpine.data("voting", () => ({
-          isLoaded: false,
-          isSendingVote: false,
-          compositions: [],
-          points: [1, 2, 3, 4, 5],
-          votes: JSON.parse(localStorage.getItem("votes") || "[]"),
+    <template x-if="!isLoaded">
+      <div>Loading...</div>
+    </template>
+  </main>
 
-          async init() {
-            try {
-              await this.fetchData();
-            } catch (e) {
-              console.error(e);
+  <script>
+    const sheetId = "7567acee-3421-4ce4-beba-5f43d28dede4";
+
+    document.addEventListener("alpine:init", () => {
+      window.Alpine.data("voting", () => ({
+        isLoaded: false,
+        isSendingVote: false,
+        compositions: [],
+        points: [1, 2, 3, 4, 5],
+        votes: JSON.parse(localStorage.getItem("votes") || "[]"),
+
+        async init() {
+          try {
+            await this.fetchData();
+          } catch (e) {
+            console.error(e);
+          }
+        },
+
+        async sendVote(composition, vote) {
+          try {
+            await this.updateVote(composition, vote);
+          } catch (e) {
+            console.error(e);
+          }
+        },
+
+        async fetchData() {
+          const resp = await fetch(
+            `https://sheet.best/api/sheets/${sheetId}`, {
+              method: "GET",
+              mode: "cors",
+              headers: {
+                "Content-Type": "application/json",
+              },
             }
-          },
+          );
+          const data = await resp.json();
 
-          async sendVote(composition, vote) {
-            try {
-              await this.updateVote(composition, vote);
-            } catch (e) {
-              console.error(e);
+          const compositions = data.map((i, index) => ({
+            ...i,
+            row: index + 1,
+            current_rating: i?.current_rating || Number(5.0).toFixed(1),
+          }));
+
+          this.compositions = compositions;
+
+          this.isLoaded = true;
+        },
+
+        async updateVote(composition, vote) {
+          if (this.isSendingVote) {
+            return;
+          }
+
+          this.isSendingVote = true;
+
+          const resp = await fetch(
+            `https://sheet.best/api/sheets/${sheetId}/song_title/*${composition.song_title}*`, {
+              method: "PATCH",
+              mode: "cors",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                current_rating: (
+                  (Number(composition.current_rating) + Number(vote)) /
+                  2
+                ).toFixed(1),
+              }),
             }
-          },
+          );
 
-          async fetchData() {
-            const resp = await fetch(
-              `https://sheet.best/api/sheets/${sheetId}`,
-              {
-                method: "GET",
-                mode: "cors",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-              }
-            );
-            const data = await resp.json();
+          const result = await resp.json();
 
-            const compositions = data.map((i, index) => ({
-              ...i,
-              row: index + 1,
-              current_rating: i?.current_rating || Number(5.0).toFixed(1),
-            }));
+          const votes = JSON.parse(
+            window.localStorage.getItem("votes") || "[]"
+          );
 
-            this.compositions = compositions;
+          votes.push({
+            song_title: composition.song_title,
+            vote
+          });
 
-            this.isLoaded = true;
-          },
+          this.votes = votes;
 
-          async updateVote(composition, vote) {
-            if (this.isSendingVote) {
-              return;
-            }
+          window.localStorage.setItem("votes", JSON.stringify(votes));
 
-            this.isSendingVote = true;
+          this.compositions = this.compositions.map(
+            (i) =>
+            result.find((item) => item.song_title === i.song_title) ?? i
+          );
 
-            const resp = await fetch(
-              `https://sheet.best/api/sheets/${sheetId}/song_title/*${composition.song_title}*`,
-              {
-                method: "PATCH",
-                mode: "cors",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                  current_rating: (
-                    (Number(composition.current_rating) + Number(vote)) /
-                    2
-                  ).toFixed(1),
-                }),
-              }
-            );
+          this.isSendingVote = false;
+        },
 
-            const result = await resp.json();
+        getVote(composition) {
+          return this.votes.find(
+            (i) => i.song_title === composition.song_title
+          )?.vote;
+        },
+      }));
+    });
+  </script>
+</body>
 
-            const votes = JSON.parse(
-              window.localStorage.getItem("votes") || "[]"
-            );
-
-            votes.push({ song_title: composition.song_title, vote });
-
-            this.votes = votes;
-
-            window.localStorage.setItem("votes", JSON.stringify(votes));
-
-            this.compositions = this.compositions.map(
-              (i) =>
-                result.find((item) => item.song_title === i.song_title) ?? i
-            );
-
-            this.isSendingVote = false;
-          },
-
-          getVote(composition) {
-            return this.votes.find(
-              (i) => i.song_title === composition.song_title
-            )?.vote;
-          },
-        }));
-      });
-    </script>
-  </body>
 </html>
